@@ -18,7 +18,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   padding: 8px 24px;
-  background-color: #cafdff;
+  background-color: white;
   margin: 0 auto;
   font-size: 16px;
 }
@@ -30,9 +30,10 @@ nav {
 }
 .nav__link {
   margin: 16px 24px;
-  align-items: center;
   display: flex;
-  text-decoration: wavy;
+}
+.nav__link--primary {
+  color: white;
 }
 .logo {
   display: flex;
@@ -46,7 +47,7 @@ nav {
   font-size: 1.5em;
 }
 .btn {
-  background-color: rgb(100, 21, 255 );
+  background-color: rgb(100, 21, 255);
   color: white;
   border: none;
   border-radius: 32px;
@@ -59,8 +60,8 @@ nav {
 
 /* Header */
 
-.color{
-    color:rgb(100, 21, 255);
+.color {
+  color: rgb(100, 21, 255);
 }
 .home {
   display: flex;
@@ -74,9 +75,9 @@ nav {
   width: calc(70% / 2);
   height: 400px;
 }
-h1{
-    display: flex;
-    align-items: center;
+h1 {
+  display: flex;
+  align-items: center;
 }
 .home__para {
   display: flex;
@@ -97,20 +98,17 @@ h1{
   height: 350px;
 }
 
-form{
-    display: flex;
+form {
+  display: flex;
 }
-input
-{
-    margin: 8px 24px;
-    font-size: 16px;
-    padding: 6px 12px;
-    border: none;
-    
+input {
+  margin: 8px 24px;
+  font-size: 16px;
+  padding: 6px 12px;
+  border: none;
 }
-.get__started--btn{
-    display: flex;
-    position: relative;
-    align-items: center;
-    
+.get__started--btn {
+  display: flex;
+  position: relative;
+  align-items: center;
 }
