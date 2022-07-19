@@ -9,6 +9,9 @@
   list-style: none;
 }
 
+section {
+  display: block;
+}
 /* Nav section */
 nav {
   display: flex;
@@ -17,6 +20,7 @@ nav {
   padding: 8px 24px;
   background-color: #cafdff;
   margin: 0 auto;
+  font-size: 16px;
 }
 .nav__links {
   display: flex;
@@ -42,15 +46,71 @@ nav {
   font-size: 1.5em;
 }
 .btn {
-  background-color: #5030b1;
+  background-color: rgb(100, 21, 255 );
   color: white;
   border: none;
-  border-radius: 48px;
-  padding: none;
+  border-radius: 32px;
   font-size: 24px;
-  text-align: center;
   flex-wrap: wrap;
 }
 .btn:hover {
   color: white;
+}
+
+/* Header */
+
+.color{
+    color:rgb(100, 21, 255);
+}
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.home__description1 {
+  background-color: blue;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(70% / 2);
+  height: 400px;
+}
+h1{
+    display: flex;
+    align-items: center;
+}
+.home__para {
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.home__description2 {
+  display: flex;
+  background-color: blue;
+  display: flex;
+  width: calc(70% / 2);
+}
+.home__description--img {
+  display: flex;
+  width: auto;
+  max-width: 350px;
+  height: 350px;
+}
+
+form{
+    display: flex;
+}
+input
+{
+    margin: 8px 24px;
+    font-size: 16px;
+    padding: 6px 12px;
+    border: none;
+    
+}
+.get__started--btn{
+    display: flex;
+    position: relative;
+    align-items: center;
+    
 }
