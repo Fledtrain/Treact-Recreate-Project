@@ -76,31 +76,28 @@ nav {
   height: 400px;
 }
 h1 {
-  display: flex;
   align-items: center;
 }
 .home__para {
-  display: flex;
   font-size: 16px;
   font-weight: 600;
 }
 
 .home__description2 {
-  display: flex;
   background-color: blue;
   display: flex;
   width: calc(70% / 2);
 }
 .home__description--img {
-  display: flex;
   width: auto;
   max-width: 350px;
   height: 350px;
 }
 
-form {
+form, .home__description--img, .home__description2, .home__para, h1 {
   display: flex;
 }
+
 input {
   margin: 8px 24px;
   font-size: 16px;
