@@ -7,6 +7,8 @@
   box-sizing: border-box;
   color: black;
   list-style: none;
+  letter-spacing: 1px;
+  word-spacing: 1px;
 }
 
 section {
@@ -14,12 +16,14 @@ section {
 }
 /* Nav section */
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 8px 24px;
-  background-color: white;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: white;
   font-size: 16px;
 }
 .nav__links {
@@ -31,31 +35,27 @@ nav {
 .nav__link {
   margin: 16px 24px;
   display: flex;
+  font-weight: 700;
 }
 .nav__link--primary {
   color: white;
+  background-color: rgb(100, 21, 255);
+  border: none;
+  border-radius: 50px;
+  font-size: 24px;
+  flex-wrap: wrap;
+  margin: 0 12px;
+  padding: 8px 20px;
 }
 .logo {
   display: flex;
-  width: 16%;
-  height: auto;
+  width: 20%;
 }
 .logo__img--wrapper {
   display: flex;
   align-items: center;
   font-weight: 1000;
   font-size: 1.5em;
-}
-.btn {
-  background-color: rgb(100, 21, 255);
-  color: white;
-  border: none;
-  border-radius: 32px;
-  font-size: 24px;
-  flex-wrap: wrap;
-}
-.btn:hover {
-  color: white;
 }
 
 /* Header */
@@ -65,18 +65,20 @@ nav {
 }
 .home {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 36px;
+  padding-bottom: 64px;
 }
 .home__description1 {
-  background-color: blue;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  width: calc(70% / 2);
-  height: 400px;
+  width: 40%;
 }
 h1 {
   align-items: center;
+  font-size: 24px;
 }
 .home__para {
   font-size: 16px;
@@ -84,28 +86,58 @@ h1 {
 }
 
 .home__description2 {
-  background-color: blue;
   display: flex;
-  width: calc(70% / 2);
+  width: 60%;
 }
 .home__description--img {
   width: auto;
-  max-width: 350px;
-  height: 350px;
+  max-width: 1200px;
+  height: 510px;
+  margin: 0 auto;
 }
 
-form, .home__description--img, .home__description2, .home__para, h1 {
-  display: flex;
+@media (min-width: 640px) {
+  input {
+    padding-right: 12rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
 }
-
 input {
-  margin: 8px 24px;
   font-size: 16px;
-  padding: 6px 12px;
-  border: none;
+  border-radius: 9999px;
+  border-width: 2px;
+  width: 100%;
+  font-weight: 500;
 }
-.get__started--btn {
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Customers */
+.customers {
+  padding-top: 32px;
   display: flex;
-  position: relative;
   align-items: center;
+  flex-wrap: wrap;
+}
+.customers__para,
+.customers__logo {
+  display: flex;
+  height: 30px;
+  opacity: 0.5;
+}
+
+/* Features */
+
+.container {
+  padding: 80px 0;
+  background-color: red;
+}
+.features__p,
+.features__h1,
+.features__h3 {
+  text-align: center;
 }
