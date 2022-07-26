@@ -165,7 +165,9 @@ input {
 .work__description1,
 .work__description2,
 .step__description2,
-.step__description1{
+.step__description1,
+.value__description1,
+.value__description2{
   display: flex;
 }
 .service {
@@ -241,7 +243,6 @@ input {
 .Steps {
   padding: 80px 24px 0 ;
   overflow: hidden;
-
 }
 .step {
   display: flex;
@@ -285,7 +286,6 @@ input {
   color: #80808070;
   font-weight: 900;
   font-size: 36px;
-
 }
 
 .step__downloads--register {
@@ -302,4 +302,44 @@ input {
 }
 
 
+
+
 /* Values Section */
+.values{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Values descirption1 Section */
+.value__description1{
+  width: 50%;
+  flex-direction: column;
+  padding: 8px;
+}
+.value__color{
+  padding: 8px 0 8px 0;
+}
+.value__para{
+  padding: 8px 0 8px 0;
+}
+.value__affordable{
+  padding: 8px 0 8px 0;
+}
+
+
+.values__affordable--para{
+  padding: 8px 0 8px 0;
+}
+
+
+/* Values descirption2 Section */
+.value__description2{
+  flex-direction: column;
+  width: 50%;
+}
+.value__description--img{
+  width: 100%;
+  height: 100%;
+
+}
