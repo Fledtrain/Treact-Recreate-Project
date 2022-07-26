@@ -345,3 +345,21 @@ input {
   width: 100%;
   height: 100%;
 }
+
+
+
+
+/* Plans Section */
+.pricing{
+  padding:80px 24px;
+}
+
+.plans{
+  display: flex;
+  flex-wrap: wrap;
+}
+.plan{
+  width: calc(100%/3);
+  display: flex;
+  flex-direction: column;
+}
