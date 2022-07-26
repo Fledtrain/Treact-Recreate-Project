@@ -159,15 +159,18 @@ input {
 
 .service,
 .work,
+.value,
 .service__main,
 .services,
+.service__description,
 .service__img,
 .work__description1,
 .work__description2,
 .step__description2,
 .step__description1,
 .value__description1,
-.value__description2{
+.value__description2,
+.values__affordable--para {
   display: flex;
 }
 .service {
@@ -180,9 +183,6 @@ input {
   align-items: center;
 }
 
-.service__description {
-  display: flex;
-}
 .service__img {
   align-items: flex-start;
   position: relative;
@@ -200,9 +200,7 @@ input {
 
 /* Works */
 .works {
-  padding-top: 80px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 80px 24px;
 }
 
 .work__description1 {
@@ -241,8 +239,7 @@ input {
 /* Steps Section */
 /* Steps section Left side */
 .Steps {
-  padding: 80px 24px 0 ;
-  overflow: hidden;
+  padding: 80px 24px;
 }
 .step {
   display: flex;
@@ -254,7 +251,7 @@ input {
 
 .step__img {
   width: 100%;
-  height: 75%;
+  height: 64%;
   display: flex;
 }
 .step__img--wrapper {
@@ -277,7 +274,7 @@ input {
 .step__h1 {
   padding: 16px;
   font-weight: 1000;
-  font-size:34px;
+  font-size: 34px;
 }
 .step__download {
   display: flex;
@@ -303,43 +300,48 @@ input {
 
 
 
-
 /* Values Section */
-.values{
+.values {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 80px 24px;
 }
 
 /* Values descirption1 Section */
-.value__description1{
+.value__description1 {
   width: 50%;
   flex-direction: column;
-  padding: 8px;
+}
+.value__color,
+.value__para,
+.value__affordable,
+.values__affordable--para {
+  padding: 8px 0;
 }
 .value__color{
-  padding: 8px 0 8px 0;
+  font-size:  16px; ;
 }
 .value__para{
-  padding: 8px 0 8px 0;
+  margin-top: 16px;
 }
-.value__affordable{
-  padding: 8px 0 8px 0;
-}
-
-
 .values__affordable--para{
-  padding: 8px 0 8px 0;
+  flex-direction: column;
 }
-
+.values__p{
+  display: flex;
+  width: 16px;
+  border-radius: 8px;
+  background-color: rgba(255, 0, 0, 0.466);
+  ;
+}
 
 /* Values descirption2 Section */
-.value__description2{
+.value__description2 {
   flex-direction: column;
   width: 50%;
 }
-.value__description--img{
+.value__description--img {
   width: 100%;
   height: 100%;
-
 }
