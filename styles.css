@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
+
+@media (max-width:800px){
+  .nav:not(:last-child){
+    display: none;
+  }
+
+}
+
 * {
   text-decoration: none;
   margin: 0;
@@ -96,7 +104,7 @@ h1 {
   margin: 0 auto;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 900px) {
   input {
     padding-right: 12rem;
     padding-top: 1.25rem;
@@ -150,6 +158,9 @@ input {
   font-size: 50px;
   letter-spacing: 0.5px;
 }
+.features__p{
+  padding:0 16px
+}
 
 /* Service */
 .services {
@@ -170,7 +181,7 @@ input {
 .step__description1,
 .value__description1,
 .value__description2,
-.values__affordable--para {
+.values__affordable--para,#links__section {
   display: flex;
 }
 .service {
@@ -348,12 +359,25 @@ input {
 
 
 
+/* pricing section */
 
-/* Plans Section */
-.pricing{
+#pricing{
   padding:80px 24px;
+
 }
 
+.pricing__h1,
+.pricing__h3{
+  display: flex;
+  justify-content: center;
+}
+.pricing__p{
+  padding: 16px 80px;
+ 
+}
+
+
+/* Plans Section */
 .plans{
   display: flex;
   flex-wrap: wrap;
@@ -362,4 +386,45 @@ input {
   width: calc(100%/3);
   display: flex;
   flex-direction: column;
+  padding: 80px 4px;
+  align-items: center;
+  border: solid pink 1px;
+  text-align: center;
+}
+.plan__personal{
+  width: auto;
+  margin: 80px;
+}
+
+.plan__h1{
+font-size: 32px;
+width: auto;
+}
+
+.plan__h2{
+  font-size: 12px;
+  
+}
+
+
+
+
+/* links Section */
+#links__section{
+  padding: 80px 24px;
+  background-color: rgba(21, 0, 128, 0.513);
+}
+.links{
+  display: flex;
+}
+.link{
+  display: flex;
+  flex-direction: column;
+  width: calc(100%/5);
+  align-items: center;
+}
+
+
+.link__ul{
+  padding-top: 24px;
 }
