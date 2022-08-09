@@ -167,6 +167,8 @@ input {
 .service__img,
 .logo,
 .logo__img--wrapper,
+.links, 
+.link,
 .home,
 .home__description1,
 .home__description2,
@@ -398,11 +400,8 @@ input {
   padding: 80px 8px;
   background-color: rgba(21, 0, 128, 0.513);
 }
-.links {
-  display: flex;
-}
+
 .link {
-  display: flex;
   flex-direction: column;
   width: calc(100% / 5);
   align-items: center;
